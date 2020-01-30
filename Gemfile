@@ -34,6 +34,7 @@ gem 'jbuilder', '~> 2.5'
   gem 'devise-bootstrap-views'
   gem 'jquery-rails'
   gem "font-awesome-rails"
+  gem 'stripe'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
