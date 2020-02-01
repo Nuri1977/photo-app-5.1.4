@@ -28,7 +28,7 @@
     <!-- For all other devices -->
     <!-- Size should be 32 x 32 pixels -->
     <%#= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
-
+    <%= javascript_include_tag "https://js.stripe.com/v2/" %>
     <%= javascript_include_tag "application" %>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
@@ -47,7 +47,8 @@
           <%= yield %>
         </div>
       </div><!--/row-->
-
+    <hr>
+    <%= debug(params) if Rails.env.development? %>
       <footer>
         <p>&copy; Company 2020</p>
       </footer>

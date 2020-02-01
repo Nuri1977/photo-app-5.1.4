@@ -1,5 +1,5 @@
 class Payment < ApplicationRecord
-  attr_accessor :card_number, :card_cvv, :card_axpires_month, :card_axpires_year
+  attr_accessor :card_number, :card_cvv, :card_expires_month, :card_expires_year
   belongs_to :user
 
   def self.month_options
