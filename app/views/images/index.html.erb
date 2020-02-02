@@ -5,10 +5,8 @@
 <table class="table table-striped">
   <thead>
     <tr>
-      <th><%= model_class.human_attribute_name(:id) %></th>
       <th><%= model_class.human_attribute_name(:name) %></th>
       <th><%= model_class.human_attribute_name(:picture) %></th>
-      <th><%= model_class.human_attribute_name(:user_id) %></th>
       <th><%= model_class.human_attribute_name(:created_at) %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
@@ -16,10 +14,8 @@
   <tbody>
     <% @images.each do |image| %>
       <tr>
-        <td><%= link_to image.id, image_path(image) %></td>
-        <td><%= image.name %></td>
-        <td><%= image.picture %></td>
-        <td><%= image.user_id %></td>
+        <td><%= link_to image.name, image_path(image) %></td>
+        <td><%= image_tag image.picture.url, size: "100x100" %></td>
         <td><%=l image.created_at %></td>
         <td>
           <%= link_to t('.show', :default => t("helpers.links.show")),

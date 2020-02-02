@@ -7,7 +7,7 @@
   <dt><strong><%= model_class.human_attribute_name(:name) %>:</strong></dt>
   <dd><%= @image.name %></dd>
   <dt></dt>
-  <dd><%= image_tag(@image.picture.url, size: "400x400") if @image.picture? %></dd>
+  <dd><%= image_tag(@image.picture.url) if @image.picture? %></dd>
 
 </dl>
 
