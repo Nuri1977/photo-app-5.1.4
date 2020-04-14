@@ -35,9 +35,10 @@ gem 'jbuilder', '~> 2.5'
   gem 'jquery-rails'
   gem "font-awesome-rails"
   gem 'stripe'
-  gem 'mini_magick'
-  gem 'carrierwave'
-  gem 'fog'
+  gem 'mini_magick', '~> 4.10', '>= 4.10.1'
+  gem 'carrierwave', '~> 2.1'
+  gem 'fog', '~> 2.2'
+  gem 'fog-aws', '~> 3.5', '>= 3.5.2'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
